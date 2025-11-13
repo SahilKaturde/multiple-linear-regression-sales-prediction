@@ -19,47 +19,39 @@ This project demonstrates how advertising budgets affect sales using **Multiple 
 The model predicts **Sales** as a linear combination of advertising budgets:
 
 \[
-y = \theta_0 + \theta_1 x_1 + \theta_2 x_2 + \theta_3 x_3
+\hat{y} = \theta_0 + \theta_1 x_1 + \theta_2 x_2 + \theta_3 x_3
 \]
 
 Where:  
-- \(y\) = Sales  
-- \(x_1\) = TV advertising spend  
-- \(x_2\) = Radio advertising spend  
-- \(x_3\) = Newspaper advertising spend  
-- \(\theta_i\) = model coefficients  
+- \( \hat{y} \) = Predicted Sales  
+- \( x_1 \) = TV advertising spend  
+- \( x_2 \) = Radio advertising spend  
+- \( x_3 \) = Newspaper advertising spend  
+- \( \theta_0 \) = Bias / Intercept  
+- \( \theta_1, \theta_2, \theta_3 \) = Model coefficients  
 
 ---
 
 ### 🔢 Normal Equation (Closed-form Solution)
 
-The optimal coefficients \(\theta\) are computed as:
+The optimal coefficients \( \boldsymbol{\theta} \) are computed as:
 
 \[
-\theta = (X^T X)^{-1} X^T y
+\boldsymbol{\theta} = (X^\top X)^{-1} X^\top \mathbf{y}
 \]
 
 Where:  
-- \(X\) = Feature matrix (with a column of ones for the intercept)  
-- \(y\) = Target vector (Sales)  
-- \(X^T\) = Transpose of the feature matrix  
+- \( X \) = Feature matrix (with a column of ones for the intercept)  
+- \( \mathbf{y} \) = Target vector (Sales)  
+- \( X^\top \) = Transpose of the feature matrix  
 
-The predicted sales \(\hat{y}\) is obtained by the **dot product** of the feature matrix with the coefficients:
+The predicted sales vector \( \hat{\mathbf{y}} \) is obtained as the **dot product** of the feature matrix and the coefficients:
 
 \[
-\hat{y} = X \cdot \theta
+\hat{\mathbf{y}} = X \cdot \boldsymbol{\theta}
 \]
 
----
-
-## ⚙️ Tech Stack
-
-| Category | Tools |
-| :--- | :--- |
-| **Language** | Python 🐍 |
-| **Data & Math** | NumPy, Pandas |
-| **Visualization** | Matplotlib |
-| **Deployment** | Streamlit |
+This shows how each feature contributes linearly to the predicted sales.
 
 ---
 
