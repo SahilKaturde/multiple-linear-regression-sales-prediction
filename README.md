@@ -3,15 +3,6 @@
 Predict **Sales** based on **TV**, **Radio**, and **Newspaper** advertising budgets using a **custom Multiple Linear Regression (MLR) model**. Includes a **Streamlit web app** for real-time interactive predictions.
 
 ---
-
-## ✨ Project Badges
-
-[![Python](https://img.shields.io/badge/Python-3.11+-blue?logo=python&logoColor=white)](https://www.python.org/)  
-[![Streamlit](https://img.shields.io/badge/App-Streamlit-red?logo=streamlit&logoColor=white)](https://streamlit.io/)  
-[![GitHub stars](https://img.shields.io/github/stars/SahilKaturde/multiple-linear-regression-sales-prediction?style=social)](https://github.com/SahilKaturde/multiple-linear-regression-sales-prediction/stargazers)
-
----
-
 ## 🧠 Overview & Model
 
 This project demonstrates how advertising budgets affect sales using **Multiple Linear Regression**, trained via the **Normal Equation (closed-form solution)**.  
