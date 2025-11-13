@@ -3,6 +3,19 @@
 Predict **Sales** based on **TV**, **Radio**, and **Newspaper** advertising budgets using a **custom Multiple Linear Regression (MLR) model**. Includes a **Streamlit web app** for real-time interactive predictions.
 
 ---
+## 📈 Visuals
+
+### Actual vs Predicted Sales
+Points close to the red dashed line ($y = x$) indicate accurate predictions.  
+![Actual vs Predicted](screenshot/actual_vs_predicted.png)
+
+### Streamlit Application
+Interactive interface for real-time predictions.  
+![Streamlit App](screenshot/screen_shot.png)
+
+
+
+---
 ## 🧠 Overview & Model
 
 This project demonstrates how advertising budgets affect sales using **Multiple Linear Regression**, trained via the **Normal Equation (closed-form solution)**.  
@@ -46,17 +59,6 @@ This shows how each feature contributes linearly to the predicted sales.
 
 ---
 
-## 📈 Visuals
-
-### Actual vs Predicted Sales
-Points close to the red dashed line ($y = x$) indicate accurate predictions.  
-![Actual vs Predicted](screenshot/actual_vs_predicted.png)
-
-### Streamlit Application
-Interactive interface for real-time predictions.  
-![Streamlit App](screenshot/screen_shot.png)
-
----
 
 ## 📊 Model Performance & Metrics
 
