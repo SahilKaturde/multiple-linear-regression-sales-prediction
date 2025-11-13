@@ -37,3 +37,24 @@ Where $y$ (Sales) is a linear function of $x_1$ (TV), $x_2$ (Radio), and $x_3$ (
 
 ---
 
+---
+
+## 📈 Visuals
+
+### Actual vs Predicted Sales
+This plot shows model accuracy. Points close to the red dashed line ($y=x$) indicate perfect predictions.
+![Actual vs Predicted](screenshot/actual_vs_predicted.png)
+
+### Streamlit Application
+Screenshot of the interactive prediction interface.
+![Streamlit App](screenshot/screen_shot.png)
+
+---
+
+## 🚀 How to Run Locally
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/SahilKaturde/multiple-linear-regression-sales-prediction.git](https://github.com/SahilKaturde/multiple-linear-regression-sales-prediction.git)
+   cd multiple-linear-regression-sales-prediction
+
