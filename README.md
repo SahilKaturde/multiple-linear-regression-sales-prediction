@@ -14,42 +14,42 @@ Predict **Sales** based on **TV**, **Radio**, and **Newspaper** advertising budg
 
 ## 🧠 Overview & Model
 
-This project demonstrates how advertising budgets affect sales using **Multiple Linear Regression**, trained via the **Normal Equation** (closed-form solution).  
+This project demonstrates how advertising budgets affect sales using **Multiple Linear Regression**, trained via the **Normal Equation (closed-form solution)**.  
 
 The model predicts **Sales** as a linear combination of advertising budgets:
 
-\[
+$$
 \hat{y} = \theta_0 + \theta_1 x_1 + \theta_2 x_2 + \theta_3 x_3
-\]
+$$
 
 Where:  
-- \( \hat{y} \) = Predicted Sales  
-- \( x_1 \) = TV advertising spend  
-- \( x_2 \) = Radio advertising spend  
-- \( x_3 \) = Newspaper advertising spend  
-- \( \theta_0 \) = Bias / Intercept  
-- \( \theta_1, \theta_2, \theta_3 \) = Model coefficients  
+- $\hat{y}$ = Predicted Sales  
+- $x_1$ = TV advertising spend  
+- $x_2$ = Radio advertising spend  
+- $x_3$ = Newspaper advertising spend  
+- $\theta_0$ = Bias / Intercept  
+- $\theta_1, \theta_2, \theta_3$ = Model coefficients  
 
 ---
 
 ### 🔢 Normal Equation (Closed-form Solution)
 
-The optimal coefficients \( \boldsymbol{\theta} \) are computed as:
+The optimal coefficients $\theta$ are computed as:
 
-\[
-\boldsymbol{\theta} = (X^\top X)^{-1} X^\top \mathbf{y}
-\]
+$$
+\theta = (X^T X)^{-1} X^T y
+$$
 
 Where:  
-- \( X \) = Feature matrix (with a column of ones for the intercept)  
-- \( \mathbf{y} \) = Target vector (Sales)  
-- \( X^\top \) = Transpose of the feature matrix  
+- $X$ = Feature matrix (with a column of ones for the intercept)  
+- $y$ = Target vector (Sales)  
+- $X^T$ = Transpose of the feature matrix  
 
-The predicted sales vector \( \hat{\mathbf{y}} \) is obtained as the **dot product** of the feature matrix and the coefficients:
+The predicted sales vector $\hat{y}$ is obtained as the **dot product** of the feature matrix and the coefficients:
 
-\[
-\hat{\mathbf{y}} = X \cdot \boldsymbol{\theta}
-\]
+$$
+\hat{y} = X \cdot \theta
+$$
 
 This shows how each feature contributes linearly to the predicted sales.
 
@@ -58,7 +58,7 @@ This shows how each feature contributes linearly to the predicted sales.
 ## 📈 Visuals
 
 ### Actual vs Predicted Sales
-Points close to the red dashed line (\(y = x\)) indicate accurate predictions.  
+Points close to the red dashed line ($y = x$) indicate accurate predictions.  
 ![Actual vs Predicted](screenshot/actual_vs_predicted.png)
 
 ### Streamlit Application
@@ -70,7 +70,7 @@ Interactive interface for real-time predictions.
 ## 📊 Model Performance & Metrics
 
 - **Weights (including bias):** `[4.71412640e+00, 5.45092708e-02, 1.00945362e-01, 4.33664682e-03]`  
-  (θ₀ = bias/intercept, θ₁ = TV, θ₂ = Radio, θ₃ = Newspaper)
+  ($\theta_0$ = bias/intercept, $\theta_1$ = TV, $\theta_2$ = Radio, $\theta_3$ = Newspaper)
 - **R² Score:** 0.9059  
 - **RMSE:** 1.7052  
 - **MAE:** 1.2748  
